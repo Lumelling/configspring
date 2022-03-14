@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: client
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/banque
+    password: admin
+jpa:
+  database-platform: org.hibernate.dialect.MySQL5Dialect
+  hibernate:
+    ddl-auto: update
+server:
+  port: 8080
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka/
