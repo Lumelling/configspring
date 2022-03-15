@@ -23,7 +23,7 @@ spring:
       routes:
         #Service 1
         - id: client
-          uri: lb:/CLIENT/ #Attention : lb et pas HTTP.
+          uri: lb://CLIENT/ 
           predicates:
             # On matche tout ce qui commence par /api/toto
             - Path=/api/clients/**
