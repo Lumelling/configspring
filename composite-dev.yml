@@ -10,5 +10,14 @@ eureka:
       defaultZone: http://localhost:8083/eureka/
 
 spring:
+  loadbalancer:
+    enabled: on
+    clients:
+      client:
+        health-check:
+          interval: 30s
+      compte:
+        health-check:
+          interval: 30s
   application:
     name: composite
